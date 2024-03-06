@@ -3,7 +3,7 @@
 //Your Mysql Config
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "Date@2004";
 $dbname = "placement_portal";
 
 //Create New Database Connection
