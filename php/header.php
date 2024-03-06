@@ -9,7 +9,7 @@
              <ul>
 
                  <li><a class="nav-link scrollto" href="index.php">Home</a></li>
-                 <li class="dropdown"><a href="login.php"><span>Login</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                 <li class="dropdown"><a href="login-candidates.php"><span>Login</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                      <ul>
 
                          <li><a href="admin/index.php">Admin Login</a></li>
@@ -19,7 +19,7 @@
 
                      </ul>
                  </li>
-                 <li class="dropdown"><a href="login.php"><span>Register</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                 <li class="dropdown"><a href="register-candidates.php"><span>Register</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                      <ul>
 
                          <!-- <li><a href="admin/index.php">Admin</a></li> -->
@@ -43,7 +43,7 @@
              <i class="bi bi-list mobile-nav-toggle d-none"></i>
          </nav><!-- .navbar -->
 
-         <a class="btn-getstarted scrollto" href="faq.php">FAQ</a>
+        
 
      </div>
  </header>

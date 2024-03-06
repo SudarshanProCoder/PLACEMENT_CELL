@@ -19,254 +19,192 @@ require_once("db.php");
 
 
 </head>
-
 <body>
 
-    <!-- header starts -->
-    <?php
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
 
-    include 'php/header.php'
+      <div class="logo me-auto">
+        <h1><a href="index.php">Talent Bridge</a></h1>
+      
+      </div>
 
-    ?>
-    <!-- header ends -->
-
-    <section id="hero-animated" class="hero-animated d-flex align-items-center">
-        <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-            <img src="assets/img/hero-carousel/hero-carousel-1.svg" class="img-fluid animated">
-            <h2>Welcome to <span>Placement Cell</span></h2>
-            <p>We Will Support You In Your Entire Placement Journey.</p>
-            <div class="d-flex">
-                <a href="login.php" class="btn-get-started scrollto">Get Started</a>
-
-            </div>
-        </div>
-    </section>
-
-    <main id="main">
-
-        
-
-        </div>
-
-        </div>
-        </section>
-
-
-
-
-        
-        <section id="cta" class="cta">
-            <div class="container" data-aos="zoom-out">
-
-                <div class="row g-5">
-
-                    <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-                        <h3>Placement <em>Portal</em> </h3>
-                        <p>The Placement Cell plays a crucial role in locating job
-                            opportunities for under graduates and post graduates passing out from the college by
-                            keeping in touch with reputed firms and industrial establishments.
-                            <br>The placement cell operates round the year to facilitate contacts between companies
-                            and graduates. The number of students placed through the campus interviews is
-                            continuously rising.
-                        </p>
-                        <a class="cta-btn align-self-start" href="#">Get Started</a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
-                        <div class="img">
-                            <img src="assets/img/feature-7.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <section id="clients" class="clients">
-            <div class="container" data-aos="zoom-out">
-
-                <div class="clients-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/clients/client-1.svg" class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                        <!-- <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div> -->
-                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-                        <!-- <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div> -->
-                        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-                        <!-- <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div> -->
-                        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <!-- ======= Features Section ======= -->
-        <section id="objectives" class="features" name="objectives">
-            <div class="container" data-aos="fade-up">
-
-
-
-                <div class="tab-content">
-
-                    <div class="tab-pane active show" id="tab-1">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Objectives</h3>
-                                <p class="fst-itali">
-                                    Our Placement Portal serves various objectives:
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Developing the students to meet the Industries recruitment process.
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> To motivate students to develop Technical knowledge and soft skills in
-                                        terms of career planning, goal setting.
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> To produce world-class professionals who have excellent analytical skills,
-                                        communication skills, team building spirit and ability to work in cross cultural
-                                        environment.</li>
-
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                                <img src="assets/img/features-1.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Tab Content -->
-
-
-
-
-
-                    <section id="statistics" class="content-header">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 text-center latest-job margin-bottom-20">
-                                    <h1>Our Statistics</h1>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-aqua">
-                                        <div class="inner">
-                                            <?php
-                                            $sql = "SELECT * FROM job_post";
-                                            $result = $conn->query($sql);
-                                            if ($result->num_rows > 0) {
-                                                $totalno = $result->num_rows;
-                                            } else {
-                                                $totalno = 0;
-                                            }
-                                            ?>
-                                            <h3>
-                                                <?php echo $totalno; ?>
-                                            </h3>
-
-                                            <p>Total Drives</p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="ion ion-ios-paper"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ./col -->
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-green">
-                                        <div class="inner">
-                                            <?php
-                                            $sql = "SELECT * FROM company WHERE active='1'";
-                                            $result = $conn->query($sql);
-                                            if ($result->num_rows > 0) {
-                                                $totalno = $result->num_rows;
-                                            } else {
-                                                $totalno = 0;
-                                            }
-                                            ?>
-                                            <h3>
-                                                <?php echo $totalno; ?>
-                                            </h3>
-
-                                            <p>Job Offers</p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="ion ion-briefcase"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ./col -->
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-yellow">
-                                        <div class="inner">
-                                            <?php
-                                            $sql = "SELECT * FROM users WHERE resume!=''";
-                                            $result = $conn->query($sql);
-                                            if ($result->num_rows > 0) {
-                                                $totalno = $result->num_rows;
-                                            } else {
-                                                $totalno = 0;
-                                            }
-                                            ?>
-                                            <h3>
-                                                <?php echo $totalno; ?>
-                                            </h3>
-
-                                            <p>CV'S/Resume</p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="ion ion-ios-list"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ./col -->
-                                <div class="col-lg-3 col-xs-6">
-                                    <!-- small box -->
-                                    <div class="small-box bg-red">
-                                        <div class="inner">
-                                            <?php
-                                            $sql = "SELECT * FROM users WHERE active='1'";
-                                            $result = $conn->query($sql);
-                                            if ($result->num_rows > 0) {
-                                                $totalno = $result->num_rows;
-                                            } else {
-                                                $totalno = 0;
-                                            }
-                                            ?>
-                                            <h3>
-                                                <?php echo $totalno; ?>
-                                            </h3>
-
-                                            <p>Daily Users</p>
-                                        </div>
-                                        <div class="icon">
-                                            <i class="ion ion-person-stalker"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ./col -->
-                            </div>
-                        </div>
-                    </section>
-                    <!-- ======= F.A.Q Section ======= -->
-
-
-    </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-
-    <?php
-
-    include 'php/footer.php';
-    ?>
-
-    <!-- End Footer -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
+          <li><a class="nav-link scrollto" href="aboutus.php">About</a></li>
+         
+          
+          <li class="dropdown"><a href="register-candidates.php"><span>Register</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li><a href="register-candidates.php">Student Register</a></li>
+              <li><a href="register-company.php">Admin Register</a></li>
+             
+            </ul>
+          </li>
+          <li class="dropdown"><a href="login-candidates.php"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="login-candidates.php">Student Login</a></li>
+              
+              <li><a href="admin/index.php">Admin Login</a></li>
+              <li><a href="login-company.php">Placement Login</a></li>
+             
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="contact.php">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
     
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Welcome to <span>Talent Bridge</span></h1>
+      <h2>Connecting Dreams with Opportunities – Explore, Apply, Succeed with our Placement Portal.</h2>
+      <a href="aboutus.php" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+ 
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p> Mahavir Education Trust Chowk <br> W.T Patil Marg, D P Rd <br>  next to Duke's Company, Chembur <br> Mumbai, Maharashtra 400088</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>examcell@sakec.ac.in<br>contact@sakec.ac.in</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>02267978100<br>02267978100</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-10">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Shah and Anchor</h3>
+            <p>
+              Mahavir Education Trust Chowk <br> W.T Patil Marg, D P Rd <br>  next to Duke's Company, Chembur <br> Mumbai, Maharashtra 400088
+              <strong>Phone:</strong>02267978100<br>
+              <strong>Email:</strong> sakec@sakec.ac.in<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+        
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+
+  <?php
+
+include 'php/footer.php';
+?>
+
+<!-- End Footer -->
+
+
 
 </body>
 
