@@ -65,7 +65,7 @@ require_once("../db.php");
                     <li class="active"><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                     <li><a href="active-jobs.php"><i class="fa fa-briefcase"></i> Active Drives</a></li>
                     <li><a href="applications.php"><i class="fa fa-address-card-o"></i> Students Profile</a></li>
-                    <!-- <li><a href="companies.php"><i class="fa fa-building"></i> Companies</a></li> -->
+                    <li><a href="calendar.php"><i class="fa fa-building"></i>Calendar</a></li>
                     <li><a href="companies.php"><i class="fa fa-arrow-circle-o-right"></i> Co - Ordinators</a></li>
                     <li><a href="../logout.php"><i class="fa fa-arrow-circle-o-right"></i> Logout</a></li>
                   </ul>
@@ -199,7 +199,7 @@ require_once("../db.php");
 
     <footer class="main-footer" style="margin-left: 0px;">
       <div class="text-center">
-        <strong>Copyright &copy; 2022 <a href="learningfromscratch.online">Placement Portal</a>.</strong> All rights
+        <strong>Copyright &copy; 2024 <a href="learningfromscratch.online">Placement Portal</a>.</strong> All rights
         reserved.
       </div>
     </footer>

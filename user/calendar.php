@@ -1,22 +1,65 @@
-<!-- Main header -->
+<?php require_once('db-connect.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/bootstrap.min copy.css">
+    <link rel="stylesheet" href="../fullcalendar/lib/main.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../fullcalendar/lib/main.min.js"></script>
+    <style>
+        :root {
+            --bs-success-rgb: 71, 222, 152 !important;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .btn-info.text-light:hover,
+        .btn-info.text-light:focus {
+            background: #000;
+        }
+        table, tbody, td, tfoot, th, thead, tr {
+            border-color: #ededed !important;
+            border-style: solid;
+            border-width: 1px !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
 <header class="header">
     <nav class="navbar">
-        <a href="index.php" class="nav-logo">Talent Bridge</a>
+        <a href="#" class="nav-logo">Placement Portal</a>
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="../index.php" class="nav-link">Home</a>
+                <a href="index.php" class="nav-link">Dashboard</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="postnotice.php" class="nav-link">Post Notice</a>
             </li>
             <li class="nav-item">
-                <a href="index.php" class="nav-link">Dashboard
-                </a>
+                <a href="database.php" class="nav-link">Database</a>
             </li>
             <li class="nav-item">
-                <a href="../login-candidates.php" class="nav-link">Student Login</a>
+                <a href="placed.php" class="nav-link">Placed Students</a>
             </li>
             <li class="nav-item">
-                <a href="../contact.php" class="nav-link">Contact </a>
+                <a href="../logout.php" class="nav-link">Log Out</a>
             </li>
         </ul>
+
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -37,7 +80,7 @@
     }
 
     html {
-        font-size: 62.5%;
+        font-size: 72.5%;
         font-family: 'Roboto', sans-serif;
     }
 
@@ -50,7 +93,7 @@
     }
 
     .header {
-        /* border-bottom: 1px solid #E2E8F0; */
+        border-bottom: 1px solid #E2E8F0;
     }
 
     .navbar {
@@ -58,8 +101,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem 1.5rem;
-        /* background-color: #114f5e; */
-        background-color: #101a1d;
+        background-color: #2d2a2e;
     }
 
     .hamburger {
@@ -151,16 +193,30 @@
     }
 </style>
 
-<!-- js files-->
 
+    <div class="container py-5" id="page-container">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="calendar"></div>
+            </div>
+            
+
+<?php 
+$schedules = $conn->query("SELECT * FROM `schedule_list`");
+$sched_res = [];
+foreach($schedules->fetch_all(MYSQLI_ASSOC) as $row){
+    $row['sdate'] = date("F d, Y h:i A",strtotime($row['start_datetime']));
+    $row['edate'] = date("F d, Y h:i A",strtotime($row['end_datetime']));
+    $sched_res[$row['id']] = $row;
+}
+?>
+<?php 
+if(isset($conn)) $conn->close();
+?>
+</body>
 <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-
-    hamburger.addEventListener("click", mobileMenu);
-
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
+    var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
 </script>
+<script src="../js/script_cal.js"></script>
+
+</html>
