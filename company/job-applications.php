@@ -68,7 +68,6 @@ require_once("../db.php");
                     <li><a href="create-job-post.php"><i class="fa fa-file-o"></i> Post Drive</a></li>
                     <li><a href="my-job-post.php"><i class="fa fa-file-o"></i> Current Drives</a></li>
                     <li class="active"><a href="job-applications.php"><i class="fa fa-file-o"></i> Drive Applications</a></li>
-                    <li><a href="mailbox.php"><i class="fa fa-envelope"></i> Mailbox</a></li>
                     <li><a href="settings.php"><i class="fa fa-gear"></i> Settings</a></li>
                     <li><a href="resume-database.php"><i class="fa fa-user"></i> Resume Database</a></li>
                     <li><a href="../logout.php"><i class="fa fa-arrow-circle-o-right"></i> Logout</a></li>

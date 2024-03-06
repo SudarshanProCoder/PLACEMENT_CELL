@@ -54,13 +54,11 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
 
 
 
-  <!-- </header> -->
   <div class="login-box hello">
     <div class="login-logo ">
 
       <a href="index.php" style="color:black"><b>Placement Portal</b></a>
     </div>
-    <!-- /.login-logo -->
     <div class="login-box-body bg-blue-200 text-black ">
       <p class="login-box-msg text-2xl text-black">Student Login</p>
 
@@ -95,8 +93,7 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
       <br>
 
       <?php
-      //If User have successfully registered then show them this success message
-      //Todo: Remove Success Message without reload?
+   
       if (isset($_SESSION['registerCompleted'])) {
       ?>
         <div>
@@ -107,7 +104,7 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
       }
       ?>
       <?php
-      //If User Failed To log in then show error message.
+    
       if (isset($_SESSION['loginError'])) {
       ?>
         <div>

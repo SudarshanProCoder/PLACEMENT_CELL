@@ -17,8 +17,8 @@ require_once("../db.php");
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Placement Portal</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <title>Talent Bridge</title>
+ 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -31,14 +31,7 @@ require_once("../db.php");
   <link rel="stylesheet" href="../css/_all-skins.min.css">
   <!-- Custom -->
   <link rel="stylesheet" href="../css/custom.css">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
-  <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
@@ -50,7 +43,6 @@ require_once("../db.php");
     include 'header.php';
     ?>
 
-    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper" style="margin-left: 0px;">
 
       <section id="candidates" class="content-header">
@@ -68,7 +60,6 @@ require_once("../db.php");
                     <li><a href="create-job-post.php"><i class="fa fa-file-o"></i> Post Drive</a></li>
                     <li><a href="my-job-post.php"><i class="fa fa-file-o"></i> Current Drives</a></li>
                     <li><a href="job-applications.php"><i class="fa fa-file-o"></i> Drive Applications</a></li>
-                    <li><a href="mailbox.php"><i class="fa fa-envelope"></i> Mailbox</a></li>
                     <li><a href="settings.php"><i class="fa fa-gear"></i> Settings</a></li>
                     <li><a href="resume-database.php"><i class="fa fa-user"></i> Resume Database</a></li>
                     <li><a href="../logout.php"><i class="fa fa-arrow-circle-o-right"></i> Logout</a></li>
@@ -137,7 +128,7 @@ require_once("../db.php");
     <!-- /.content-wrapper -->
     <footer class="main-footer" style="margin-left: 0px;">
       <div class="text-center">
-        <strong>Copyright &copy; 2022 <a href="scsit@Davv">Placement Portal</a>.</strong> All rights
+        <strong>Copyright &copy; 2024 <a href="scsit@Davv">Company Portal</a>.</strong> All rights
         reserved.
       </div>
     </footer>

@@ -13,7 +13,7 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Placement Portal</title>
+  <title>Company Portal</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -53,7 +53,7 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
 
   <div class="login-box content:centre">
     <div class="login-logo">
-      <a href="index.php" style="color:black"><b>Placement Portal</b></a>
+      <a href="index.php" style="color:black"><b>Company Portal</b></a>
     </div>
     <!-- /.login-logo -->
     <div class=" login-box-body bg-blue-200 text-black text-xl">

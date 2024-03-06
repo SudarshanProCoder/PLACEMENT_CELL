@@ -1,12 +1,3 @@
-<?php
-
-//To Handle Session Variables on This Page
-session_start();
-
-
-//Including Database Connection From db.php file to avoid rewriting in all files
-require_once("db.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,23 +5,17 @@ require_once("db.php");
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="./css/about.css" />
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-
-  
-<link href="./css/style2.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="boxicons.css"> -->
 </head>
 
 <body>
-     <?php 
-        require_once("php/header.php")
-    ?> 
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-          <img src="./img/about3.jpg" class="img-fluid" alt="" style="height: 500px; width: 700px" />
+          <img src="about3.jpg" class="img-fluid" alt="" style="height: 500px; width: 700px" />
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
           <h3>About Us</h3>
@@ -73,7 +58,7 @@ require_once("db.php");
     <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="image col-lg-6" style="
-              background-image: url('./img/FEATURES.jpg');
+              background-image: url('FEATURES.jpg');
               position: relative;
               left: -30px;
               background-repeat: no-repeat;
