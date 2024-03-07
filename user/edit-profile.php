@@ -66,7 +66,8 @@ require_once("../db.php");
                     <li class="active"><a href="edit-profile.php"><i class="fa fa-user"></i> Edit Profile</a></li>
                     <li><a href="index.php"><i class="fa fa-address-card-o"></i> My Applications</a></li>
                     <!-- <li><a href="../jobs.php"><i class="fa fa-list-ul"></i> Active Drives</a></li> -->
-                    <li><a href="mailbox.php"><i class="fa fa-envelope"></i> Mailbox</a></li>
+                    <li class="active"><a href="calendar.php"><i class="fa fa-envelope"></i> Calendar</a></li>
+
                     <li><a href="settings.php"><i class="fa fa-gear"></i> Settings</a></li>
                     <li><a href="../logout.php"><i class="fa fa-arrow-circle-o-right"></i> Logout</a></li>
                   </ul>
@@ -188,7 +189,7 @@ require_once("../db.php");
 
     <footer class="main-footer" style="margin-left: 0px;">
       <div class="text-center">
-        <strong>Copyright &copy; 2022 <a href="learningfromscratch.online">Placement Portal</a>.</strong> All rights
+        <strong>Copyright &copy; 2024 <a href="learningfromscratch.online">Talent Bridge</a>.</strong> All rights
         reserved.
       </div>
     </footer>

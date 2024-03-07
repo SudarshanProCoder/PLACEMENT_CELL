@@ -13,28 +13,30 @@ if (isset($_SESSION['id_admin'])) {
 
 <head>
 
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Placement Portal</title>
+
   <link href="../img/logo.png" rel="icon">
 
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- Bootstrap 3.3.7 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+<link rel="stylesheet" href="../css/AdminLTE.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/blue.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/blue.css">
 
 
-  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<!-- Google Font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
 </head>
 
 <body class="hold-transition login-page bg-blue-100 text-white">
@@ -47,7 +49,7 @@ if (isset($_SESSION['id_admin'])) {
   <div class="login-box " id="sms">
 
     <div class="login-logo text-white">
-      <a style="color:black" href="../index.php">Company Portal</a>
+      <a style="color:black; font-weight: 400;" href="../index.php">Admin Portal</a>
     </div>
     <!-- /.login-logo -->
     <div class="bg-gray-900 text-white login-box-body large">
@@ -120,27 +122,7 @@ if (isset($_SESSION['id_admin'])) {
 
 
   <div style="margin: bottom 0px; " class="  sm:mt-48 ">
-    <footer id="footer" class="text-gray-600 body-font bg-gray-800 border-t-2 border-gray-700 small mb-0 ">
-
-      <div class="pt-1 pb-2">
-        <ul class="flex  space-x-16 justify-center text-white my-4 ">
-
-          <li><i class="fa fa-copyright" aria-hidden="true"></i>Placement Cell @ 2024</li>
-          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-          <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-
-        </ul>
-
-
-
-
-
-      </div>
-
-
-    </footer>
+    
 
 
 

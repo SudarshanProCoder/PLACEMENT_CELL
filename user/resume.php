@@ -212,7 +212,7 @@ require_once("../db.php");
                 <img id="imgT" src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" class="img-fluid my-img" alt="">
                 <div class="container">
 
-                    <p id="nameT1"><strong>Narendra Kumar</strong></p>
+                    <p id="nameT1"><strong>Sudarshan Date</strong></p>
                     <p id="contactT">8541122525</p>
                     <p id="addressT">City, India</p>
                     <hr />
@@ -225,7 +225,7 @@ require_once("../db.php");
 
             <div class="col-md-8 py-5">
                 <!-- second-col -->
-                <h1 id="nameT2">Narendra Kumar</h1>
+                <h1 id="nameT2">Sudarshan Date</h1>
 
                 <!-- Objective card  -->
 
