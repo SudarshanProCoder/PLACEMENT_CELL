@@ -33,7 +33,7 @@ require_once("db.php");
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
-          <li><a class="nav-link scrollto" href="aboutus.php">About</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
          
           
           <li class="dropdown"><a href="register-candidates.php"><span>Register</span> <i class="bi bi-chevron-down"></i></a>
